@@ -46,6 +46,9 @@
         <app-valorant-match-details
           *ngSwitchCase="'valorant'" [match]="match"
         ></app-valorant-match-details>
+        <app-fifa-match-details
+          *ngSwitchCase="'fifa'" [match]="match"
+        ></app-fifa-match-details>
       </ng-container>
     </ng-template>
   </ngb-panel>

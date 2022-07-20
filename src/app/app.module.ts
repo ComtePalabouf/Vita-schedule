@@ -14,6 +14,7 @@ import { ValorantMatchDetailsComponent } from './match-details/valorant-match-de
 import { MatchesAccordionComponent } from './list-matches/matches-accordion/matches-accordion.component';
 import { StreamsComponent } from './match-details/streams/streams.component';
 import { OpponentsComponent } from './match-details/opponents/opponents.component';
+import { FifaMatchDetailsComponent } from './match-details/fifa-match-details/fifa-match-details.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { OpponentsComponent } from './match-details/opponents/opponents.componen
     MatchesAccordionComponent,
     StreamsComponent,
     OpponentsComponent,
+    FifaMatchDetailsComponent,
   ],
   imports: [
     BrowserModule,

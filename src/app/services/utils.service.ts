@@ -32,6 +32,12 @@ export class UtilsService {
       teams: [129919],
       checked: true,
     },
+    {
+      code: 'fifa',
+      name: 'FIFA',
+      teams: [131359],
+      checked: true,
+    },
   ];
 
   mapResponseToMatchArray(response: Object): Match[] {

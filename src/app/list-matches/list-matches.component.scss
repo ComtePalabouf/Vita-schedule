@@ -1,3 +1,7 @@
+.navbar {
+  background-color: black;
+}
+
 .title {
   color: white;
 }
@@ -9,7 +13,9 @@
 img {
   cursor: pointer;
   height: 3rem;
-  padding: 0.5rem;
+  width: 3rem;
+  padding: 0.3rem;
+  object-fit: contain;
 }
 
 .selected {
