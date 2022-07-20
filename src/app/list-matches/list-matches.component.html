@@ -1,10 +1,13 @@
 <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
-    <div class="navbar-brand title">Vitality Schedule</div>
+    <div class="navbar-brand title">
+      <img class="logo" src="../../assets/logos/vitality.png" alt="Vitality" />
+      Vitality Schedule
+    </div>
     <div class="navbar-text nav-fill">
       <ul class="list-inline text-right">
         <li class="list-inline-item" *ngFor="let game of games" (click)="selectGame(game.code)">
-          <img [class]="game.checked ? 'selected' : ''" [src]="'../../assets/logos/' + game.code + '.png'" [alt]="game.name" />
+          <img class="game" [class]="game.checked ? 'selected' : ''" [src]="'../../assets/logos/' + game.code + '.png'" [alt]="game.name" />
         </li>
       </ul>
     </div>

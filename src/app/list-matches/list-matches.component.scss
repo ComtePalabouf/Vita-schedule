@@ -6,11 +6,15 @@
   color: white;
 }
 
+.logo {
+  height: 5rem;
+}
+
 .btn:focus {
   box-shadow: none;
 }
 
-img {
+.game {
   cursor: pointer;
   height: 3rem;
   width: 3rem;
