@@ -12,13 +12,16 @@
     </div>
 
     <div class="row align-items-center player" *ngFor="let player of opponents[0]?.players" >
-      <div class="col-4 col-lg-2 order-lg-2 text-center">
+      <div class="col-4 col-lg-2 order-lg-3 text-center">
         <ng-container *ngIf="player?.image_url">
           <img [src]="player.image_url" [alt]="player.name" />
         </ng-container>
       </div>
-      <div class="col-8 col-lg-10 order-lg-1">
+      <div class="col-4 col-lg-8 order-lg-2">
         {{ player.name }}
+      </div>
+      <div class="col-4 col-lg-2 order-lg-1 text-center">
+        <span [ngClass]="'flag-icon flag-icon-' + player.nationality | lowercase"></span>
       </div>
     </div>
   </div>
@@ -41,8 +44,11 @@
           <img [src]="player.image_url" [alt]="player.name" />
         </ng-container>
       </div>
-      <div class="col-8 col-lg-10 text-left">
+      <div class="col-4 col-lg-8 text-left">
         {{ player.name }}
+      </div>
+      <div class="col-4 col-lg-2 text-center">
+        <span [ngClass]="'flag-icon flag-icon-' + player.nationality | lowercase"></span>
       </div>
     </div>
   </div>
